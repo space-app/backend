@@ -8,12 +8,12 @@ var WeathersSchema = new Schema({
     required: true
   },
   region: {
-    type: String,
-    default: ""
+    type: Schema.Types.ObjectId,
+    ref: "Region"
   },
   temperature: {
     type: String,
-    default: "°C"
+    default: "0 °C"
   }
 });
 
